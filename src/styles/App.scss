@@ -10,3 +10,9 @@
 .hdg-main {
   @include box_shadow(1);
 }
+
+.bookCard {
+  width: 12rem;
+  height: 24rem;
+  border: 1px gray;
+}

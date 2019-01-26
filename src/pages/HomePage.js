@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../components/Header'
 import Search from '../components/Search'
+import BookCard from '../components/BookCard'
 
 class HomePage extends Component {
   render() {
@@ -8,6 +9,7 @@ class HomePage extends Component {
       <React.Fragment>
         <Header />
         <Search />
+        <BookCard />
       </React.Fragment>
     );
   }

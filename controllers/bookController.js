@@ -1,14 +1,11 @@
 const mongoose = require('mongoose')
-const Library = mongoose.model('Library')
+const db = require('../models')
 
-exports.homePage = (req, res) => {
-  res.render('/../src/index')
+module.exports = {
+  create: (req, res) => {
+    db.Book
+      .create(req.body)
+      .then(data => res.json(data))
+      .catch(err => res.status(400).json(err))
+  }
 }
-
-exports.addBook = async (req, res) => {
-  const book = await new Book(req.body).save()
-}
-
-exports.getBooks = async (req, res) => {}
-
-exports.editBook = async (req, res) => {}

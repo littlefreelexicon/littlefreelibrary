@@ -1,12 +1,59 @@
+// VARIABLES
 @import '_colors.scss';
 @import '_fonts.scss';
 @import '_mixins.scss';
 
+$border-default: 1px solid $color-border;
+
 * {
-  color: $color-primary;
-  font-family: $font-sans;
+  margin: 0;
+  padding: 0;
 }
 
-.hdg-main {
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-serif;
+  color: $color-primary;
+}
+
+p, ul, ol, li, table, tr, th, td, span {
+  font-family: $font-sans;
+  color: $color-text;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 1em;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  background-color: $color-background-accent;
+  padding-top: 1em;
+}
+
+.menu {
+  background-color: $color-background-main;
+  border: $border-default;
+  width: 80vw;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 1em;
+
+  hr {
+    width: 90%;
+    margin: 0.5em 0;
+  }
+}
+
+.card {
   @include box_shadow(1);
 }

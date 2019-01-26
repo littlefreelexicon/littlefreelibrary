@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import HomePage from './pages/HomePage'
-import BookCard from './BookCard'
+import BookCard from './components/BookCard'
 import './styles/App.scss'
 
 class App extends Component {
@@ -8,7 +8,6 @@ class App extends Component {
     return (
       <div className='App'>
         <HomePage />
-        <BookCard />
       </div>
     );
   }

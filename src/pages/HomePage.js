@@ -6,6 +6,7 @@ class HomePage extends Component {
     return (
       <React.Fragment>
         <Header />
+        <BookCard />
       </React.Fragment>
     );
   }

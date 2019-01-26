@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const librarySchema = new Schema({
@@ -7,23 +7,23 @@ const librarySchema = new Schema({
   charterNumber: Number,
   steward: {
     type: Schema.Types.ObjectId,
-    ref: "Steward"
+    ref: 'Steward'
   },
   books: [
     {
       type: Schema.Types.ObjectId,
-      ref: "Book"
+      ref: 'Book'
     }
   ],
   photo: String,
   location: {
     type: {
       type: String,
-      default: "Point"
+      default: 'Point'
     },
     coordinates: [Number],
     address: String
   }
 })
 
-module.exports = mongoose.model("Library", librarySchema)
+module.exports = mongoose.model('Library', librarySchema)

@@ -1,3 +1,5 @@
 module.exports = {
-    Book: require('./book')
+  Book: require('./book'),
+  Library: require('./library'),
+  Steward: require('./steward')
 }

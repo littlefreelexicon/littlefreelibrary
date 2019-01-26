@@ -63,3 +63,11 @@ nav {
   height: 24rem;
   border: 1px gray;
 }
+
+@media (min-width: 600px) {
+  .bookCard {
+    width: 24rem;
+    height: 48rem;
+    border: 1px gray;
+  }
+}

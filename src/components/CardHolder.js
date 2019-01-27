@@ -29,7 +29,7 @@ componentDidMount() {
         </div> */}
         {this.state.books.map((book) => {
           return (
-            <BookCard title={book.title} author={book.author} libraryName={book.library} />
+            <BookCard title={book.title} author={book.author} libraryName={book.library.libraryName} />
           )
         })}
       </div>

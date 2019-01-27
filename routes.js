@@ -1,12 +1,7 @@
+const path = require('path')
 const express = require('express')
 const mongoose = require('mongoose')
 const router = express.Router()
-<<<<<<< HEAD
-const bookController = require('/controllers/bookController')
-const userController = require('/controllers/userController')
-
-router.get('/')
-=======
 const bookController = require('./controllers/bookController')
 const libraryController = require('./controllers/libraryController')
 const stewardController = require('./controllers/stewardController')
@@ -24,5 +19,7 @@ router.get('/library/:id', libraryController.findById)
 
 // Steward Routing
 router.post('/steward', stewardController.register)
->>>>>>> master
 
+router.get('/', (req, res) => { res.sendFile(path.join(__dirname, './build/index.html')) })
+
+module.exports = router

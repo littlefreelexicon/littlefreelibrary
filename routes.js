@@ -6,15 +6,16 @@ const stewardController = require('./controllers/stewardController')
 
 // Book Routing
 router.post('/book', bookController.create)
+router.get('/books/:zip/:radius', bookController.findNearby)
 router.get('/book/:bookId', bookController.getBookDetails)
 router.get('/books/', bookController.getAllBooks)
 
 // Library Routing
-router.route('/library').post(libraryController.create)
+router.post('/library', libraryController.create)
+    .get(libraryController.findAll)
+router.get('/library/:id', libraryController.findById)
 
 // Steward Routing
-router.route('/steward').post(stewardController.register)
-router.route('/books/:zip/:radius')
-    .get(bookController.findNearby)
+router.post('/steward', stewardController.register)
 
 module.exports = router

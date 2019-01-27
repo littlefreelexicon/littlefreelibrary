@@ -5,7 +5,7 @@ import './styles/App.scss'
 class App extends Component {
   render() {
     return (
-      <div className='App'>
+      <div className='app'>
         <HomePage />
       </div>
     );

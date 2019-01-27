@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const env = require('dotenv').load()
+const routes = require('./routes.js')
 
 const PORT = process.env.PORT || 3001
 const app = express()

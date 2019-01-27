@@ -25,6 +25,7 @@ class LibraryDetail extends Component {
   }
 
   render() {
+    console.log(this.state);
     return (
       <div className='book-detail-page'>
         <img className='book-detail-main-image' alt='' src='https://mymodernmet.com/wp/wp-content/uploads/archive/NKELseWBX97O7un3EPiz_1082118316.jpeg'/>

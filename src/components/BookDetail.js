@@ -44,7 +44,7 @@ class BookDetail extends Component {
             alt=''
             src={this.state.book.library && this.state.book.library.photo}/>
           <div className='library-address'>
-            <a href={this.state.book.library && `http://localhost:3001/librarydetails/${this.state.book.library._id}`}>
+            <a href={this.state.book.library && `http://localhost:3000/librarydetails/${this.state.book.library._id}`}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
                 {this.state.book.library && this.state.book.library.location.address}
             </a>

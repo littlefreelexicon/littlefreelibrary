@@ -9,7 +9,7 @@ class BookCard extends Component {
         <div className='card'>
           <img src={process.env.PUBLIC_URL + '/images/' + this.props.genre + '.svg'} alt="book genre icon" />
           <h2>{this.props.title} <span>by {this.props.author}</span></h2>
-          <h3><FontAwesomeIcon icon={faMapMarkerAlt} /> <address>{this.props.libraryName}</address></h3>
+          <h3>{this.props.libraryName && (<FontAwesomeIcon icon={faMapMarkerAlt} /> )} <address>{this.props.libraryName}</address></h3>
         </div>
       </a>
     );

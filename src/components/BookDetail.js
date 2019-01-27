@@ -3,10 +3,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
 
 class BookDetail extends Component {
+
+  constructor (props) {
+    super(props)
+    this.state = {
+        book: {
+            title: '',
+            image: 'https://www.w3schools.com/images/picture.jpg'
+        }
+    }
+  }
   render() {
     return (
       <div className='book-detail-page'>
         <img className='book-detail-main-image' alt='' src='https://www.w3schools.com/images/picture.jpg'/>
+        <span className="book-title">
+        <h2>Huck Fin</h2>
+        <h4>By: Mark Twain</h4>
+        </span>
         <h2 className="description">Location</h2>
         <div className='address-border'>
         <img className='book-detail-library-image' alt='' src='https://www.w3schools.com/images/picture.jpg'/>

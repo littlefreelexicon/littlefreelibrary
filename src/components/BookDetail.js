@@ -46,11 +46,12 @@ class BookDetail extends Component {
           <div className='library-address'>
             <a href={this.state.book.library && `http://localhost:3001/librarydetails/${this.state.book.library._id}`}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
-                <a href='/'>{this.state.book.library && this.state.book.library.location.address}</a>
+                {this.state.book.library && this.state.book.library.location.address}
             </a>
           </div>
         <span><button className='get-directions'>Get Directions</button></span>
         <span><button className='check-out'>Check out this book</button></span>
+        </div>
       </div>
     );
   }

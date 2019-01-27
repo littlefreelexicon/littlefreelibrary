@@ -8,11 +8,14 @@ class BookDetail extends Component {
     super(props)
     this.state = {
         book: {
-            title: '',
-            image: 'https://www.w3schools.com/images/picture.jpg'
+            title: 'Huckleberry Finn',
+            author: 'Mark Twain',
+            image: 'https://www.w3schools.com/images/picture.jpg',
+            address: '2635 Girard Ave South Minneapolis, MN'
         }
     }
   }
+
   render() {
     return (
       <div className='book-detail-page'>

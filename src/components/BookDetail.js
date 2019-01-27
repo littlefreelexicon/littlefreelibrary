@@ -20,6 +20,10 @@ class BookDetail extends Component {
     }
   }
 
+  goToGoogle(){
+    window.open('https://www.google.com/maps/dir/Glen+Nelson+Center,+Wabasha+Street+North+%23500,+Saint+Paul,+MN/44.9454441,-93.1372606/@44.9381581,-93.1707392,13z/data=!4m8!4m7!1m5!1m1!1s0x87f7d5e4f681971b:0x9a085adfbe7ccf95!2m2!1d-93.0941778!2d44.9461828!1m0', '_blank')
+  }
+
   render() {
     return (
       <div className='book-detail-page'>
@@ -39,7 +43,7 @@ class BookDetail extends Component {
         {this.state.library.cityState}</a>
         </span>
         </div>
-        <span><button className='get-directions'>Get Directions</button></span>
+        <span><button onClick={this.goToGoogle} className='get-directions'>Get Directions</button></span>
         <span><button className='check-out'>Check out this book</button></span>
         <h2 className='description'>Description</h2>
         <p className='description'>{this.state.book.description}</p>

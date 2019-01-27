@@ -13,7 +13,6 @@ class HomePage extends Component {
         <Header />
         <Search />
         <CardHolder />
-        <LibraryDetail />
       </React.Fragment>
     );
   }

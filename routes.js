@@ -13,4 +13,7 @@ router.route('/library').post(libraryController.create)
 // Steward Routing
 router.route('/steward').post(stewardController.register)
 
+router.route('/books/:zip/:radius')
+    .get(bookController.findNearby)
+
 module.exports = router

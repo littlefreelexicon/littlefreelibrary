@@ -27,7 +27,8 @@ class CardHolder extends Component {
               title={book.title.length > 40 ? book.title.substring(0,40) + '...' : book.title}
               author={book.author}
               libraryName={book.library.libraryName}
-              id={book._id} />
+              id={book._id}
+              genre={book.genres[0]}/>
           )
         })}
       </div>

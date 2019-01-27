@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import BookCard from './BookCard'
 
 class LibraryDetail extends Component {
@@ -16,6 +16,7 @@ class LibraryDetail extends Component {
     let location = window.location.href
     let locationArray = location.split('/')
     let id = locationArray[locationArray.length - 1]
+    console.log(id)
 
     fetch(`http://localhost:3001/findLibrary/${id}`)
       .then(data => data.json())
@@ -25,13 +26,13 @@ class LibraryDetail extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className='book-detail-page'>
-        <img className='book-detail-main-image' alt='' src='https://mymodernmet.com/wp/wp-content/uploads/archive/NKELseWBX97O7un3EPiz_1082118316.jpeg'/>
+        <FontAwesomeIcon icon={faArrowLeft} />
+        <img className='book-detail-main-image' alt='' src={this.state.library && this.state.library.photo}/>
         <span className='align-address'>
         <h2 className='description'>Address</h2>
-        <a href='/'>{this.state.library.location && this.state.library.location.address}</a>
+        <a href='/'>{this.state.library.location && this.state.library.location.address.replace(",", "")}</a>
         </span>
         <span className='align-steward'>
         <h2 className='description'>Steward</h2>

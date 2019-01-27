@@ -10,7 +10,6 @@ class BookDetailsPage extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
         <BookDetail />
       </React.Fragment>
     )

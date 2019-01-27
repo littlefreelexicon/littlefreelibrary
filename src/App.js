@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import HomePage from './pages/HomePage'
-import BookCard from './BookCard'
+import CardHolder from './components/CardHolder'
 import './styles/App.scss'
 
 class App extends Component {
   render() {
     return (
-      <div className='App'>
+      <div className='app'>
         <HomePage />
-        <BookCard />
+        <CardHolder />
       </div>
     );
   }

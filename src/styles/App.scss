@@ -10,12 +10,16 @@ $border-default: 1px solid $color-border;
   padding: 0;
 }
 
+.app {
+  background-color: $color-background-main;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-serif;
   color: $color-primary;
 }
 
-p, ul, ol, li, table, tr, th, td, span {
+p, ul, ol, li, table, tr, th, td, span, label, input {
   font-family: $font-sans;
   color: $color-text;
 }
@@ -54,6 +58,31 @@ nav {
   }
 }
 
+.search {
+  background-color: $color-background-main;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+
+  input {
+    grid-column: 1 / span 2;
+    padding: 1.25em;
+    margin: 1em 0;
+    grid-column: 1 / span 2;
+    font-size: 1em;
+    border-radius: 3px;
+    border: $border-default;
+  }
+
+  button {
+    align-self: end;
+    justify-self: end;
+    font-size: 0.8em;
+    color: $color-link;
+  }
+}
+
 .card {
   @include box_shadow(1);
 }
@@ -62,4 +91,12 @@ nav {
   width: 12rem;
   height: 24rem;
   border: 1px gray;
+}
+
+@media (min-width: 600px) {
+  .bookCard {
+    width: 24rem;
+    height: 48rem;
+    border: 1px gray;
+  }
 }

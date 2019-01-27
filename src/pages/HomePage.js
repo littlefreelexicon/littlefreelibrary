@@ -21,13 +21,13 @@ componentDidMount() {
 }
 
 filterTheResultsByTitle(searchTerm) {
-  this.state.filter(book => {
+  this.state.books.filter(book => {
     return book.title == searchTerm
   })
 }
 
 filterTheResultsByAuthor(searchTerm) {
-  this.state.filter(book => {
+  this.state.books.filter(book => {
     return book.author == searchTerm
   })
 }

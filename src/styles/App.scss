@@ -16,7 +16,7 @@ $border-default: 1px solid $color-border;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-serif;
-  color: $color-primary;
+  color: $color-text;
 }
 
 p, ul, ol, li, table, tr, th, td, span, label, input {
@@ -26,7 +26,11 @@ p, ul, ol, li, table, tr, th, td, span, label, input {
 
 a {
   text-decoration: none;
-  color: $color-primary;
+  color: $color-text;
+  
+  svg {
+    color: $color-primary;
+  }
 }
 
 .header {
@@ -34,6 +38,18 @@ a {
   justify-items: center;
   background-color: $color-background-accent;
   padding-top: 12px;
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  hr {
+    border: none;
+    background-color: $color-border;
+    color: $color-border;
+    height: 1px;
+  }
 }
 
 nav {
@@ -42,8 +58,12 @@ nav {
   width: 1fr;
 }
 
-.menu {
+.book-detail-page {
   background-color: $color-background-main;
+}
+
+.menu {
+  background-color: $color-background-accent;
   border: $border-default;
   width: 1fr;
   display: flex;
@@ -95,14 +115,14 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   padding: 6px;
+  background-color: $color-background-main;
 }
 
 .card {
   @include box_shadow(1);
   background-color: $white;
-  height: 188px;
   width: 146px;
-  border-radius: 5px;
+  border-radius: 2px;
   margin: 6px;
   padding: 12px;
   display: grid;
@@ -110,7 +130,7 @@ nav {
   h2 {
     color: $color-text;
     font-size: 1.1em;
-    line-height: 1.1em;
+    line-height: 1.3em;
 
     span {
       font-family: $font-serif;
@@ -119,21 +139,28 @@ nav {
   }
 
   h3 {
-    font-size: 0.9em;
+    font-size: 0.8em;
     display: flex;
     align-items: center;
+    color: $color-secondary;
+    font-family: $font-sans;
+    font-weight: normal;
+    margin: 12px 0px;
 
     svg {
       padding-right: 6px;
     }
+
+    address {
+      font-style: normal;
+    }
   }
 
   img {
-    width: 90px;
+    width: 145px;
     align-self: center;
     justify-self: center;
-    border: $border-default;
-    margin-bottom: 1em;
+    margin: 1em 0em;
   }
 }
 

@@ -10,7 +10,6 @@ class LibraryDetailsPage extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
         <LibraryDetail />
       </React.Fragment>
     )

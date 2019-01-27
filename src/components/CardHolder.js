@@ -6,22 +6,14 @@ class CardHolder extends Component {
     super(props)
 
     this.state = {
-      books: [],
+      books: []
     }
-  }
-  
-  componentDidMount() {
-    fetch('http://localhost:3001/allBooks')
-    .then(data => data.json())
-    .then(res => {
-      this.setState({ books: res })
-    })
   }
 
   render() {
     return (
-      <div className='card_holder'>
-        {this.state.books.map((book) => {
+      <div className="card_holder">
+        {this.props.resultsFromHome.map(book => {
           return (
             <BookCard
               genre={book.genres && book.genres[0]}
@@ -33,8 +25,8 @@ class CardHolder extends Component {
           )
         })}
       </div>
-    );
+    )
   }
 }
 
-export default CardHolder;
+export default CardHolder

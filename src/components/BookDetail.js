@@ -24,7 +24,6 @@ class BookDetail extends Component {
       })
       .then(res => {
         this.setState({ book: res })
-        debugger;
         console.log(this.state);
       })
       .catch(

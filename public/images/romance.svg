@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="188px" height="115px" viewBox="0 0 188 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Image / Book Imageromance</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Image-/-Book-Image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Book-Image">
+            <g id="Background-Shape-6" fill="#FDF0EE" fill-rule="nonzero">
+                <path d="M90.2436457,-0.326340165 C97.8389925,-1.54460881 118.024749,-16.1101861 128.641765,-11.0312234 C159.997528,3.96872989 151.761571,24.0966649 152.604257,40.8518047 C153.458199,57.8307481 107.61479,73.5620605 99.6498342,85.0395937 C95.657244,90.7929322 94.5527806,104.139871 84.3431965,111.538202 C74.1853296,118.899056 49.0518224,127.401042 38.0278202,111.538202 C27.003818,95.6753625 60.7410907,68.471421 59.6407452,53.8425165 C58.5403997,39.213612 56.2595318,5.12459997 90.2436457,-0.326340165 Z" id="Path-4" transform="translate(94.400331, 54.209717) rotate(-134.000000) translate(-94.400331, -54.209717) "></path>
+            </g>
+            <g id="Group-7" transform="translate(62.000000, 8.000000)">
+                <g id="Book-image" stroke="#262425">
+                    <g>
+                        <polygon id="Path-5" fill-rule="nonzero" points="0 7 9.37555669e-17 74 55 74 55 7"></polygon>
+                        <polyline id="Path" fill-rule="nonzero" points="61.3372941 67.8813477 64 67.8813477 64 0 12.1221133 0 0 7.15411887"></polyline>
+                        <polyline id="Path" fill-rule="nonzero" points="12 3 59.7739258 3 59.7739258 71.2202148 55.7608817 71.2202148"></polyline>
+                    </g>
+                </g>
+                <g id="Book-icon-/-Romance" transform="translate(14.000000, 31.000000)" fill="#000000">
+                    <g id="heart-solid" transform="translate(3.000000, 1.000000)">
+                        <path d="M19.7163549,1.29915207 C17.3792846,-0.681392039 13.9035323,-0.325148559 11.7583748,1.87592723 L10.9182236,2.73684897 L10.0780725,1.87592723 C7.93717966,-0.325148559 4.45716266,-0.681392039 2.12009242,1.29915207 C-0.558155965,3.57232476 -0.698891947,7.6521608 1.69788447,10.1161782 L9.95013067,18.5896838 C10.4832215,19.1367721 11.348961,19.1367721 11.8820519,18.5896838 L20.1342981,10.1161782 C22.5353392,7.6521608 22.3946032,3.57232476 19.7163549,1.29915207 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

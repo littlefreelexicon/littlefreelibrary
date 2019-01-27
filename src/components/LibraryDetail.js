@@ -25,6 +25,13 @@ class LibraryDetail extends Component {
       })
   }
 
+  goToGoogle() {
+    window.open(
+      'https://www.google.com/maps/dir/Glen+Nelson+Center,+Wabasha+Street+North+%23500,+Saint+Paul,+MN/The+Buttered+Tin,+7th+Street+East,+Saint+Paul,+MN/@44.9485887,-93.0949047,16z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x87f7d5e4f681971b:0x9a085adfbe7ccf95!2m2!1d-93.0941778!2d44.9461828!1m5!1m1!1s0x87f7d5506765dcf3:0xe663f9063ed3d018!2m2!1d-93.0888711!2d44.9510235',
+      '_blank'
+    )
+  }
+
   render() {
     return (
       <div className='book-detail-page'>
@@ -40,17 +47,19 @@ class LibraryDetail extends Component {
         {`${this.state.library.steward && this.state.library.steward.firstName} ${this.state.library.steward && this.state.library.steward.lastName}`}
         </span>
         </span>
-        <span><button className='get-directions'>Get Directions</button></span>
+        <span><button className='get-directions' onClick={this.goToGoogle}>Get Directions</button></span>
         <h2>Available Books</h2>
+        <div className='card_holder'>
         {this.state.library.books && this.state.library.books.map((book) => {
           return (
             <BookCard
-              title={book.title.length > 40 ? book.title.substring(0,40) + '...' : book.title}
-              author={book.author}
-              genre={book.genres[0]}
-              id={book._id} />
-          )
-        })}
+            title={book.title.length > 40 ? book.title.substring(0,40) + '...' : book.title}
+            author={book.author}
+            genre={book.genres[0]}
+            id={book._id} />
+            )
+          })}
+        </div>
       </div>
     );
   }

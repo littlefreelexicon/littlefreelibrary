@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const librarySchema = new Schema({
   libraryId: Number,
-  libaryName: String,
+  libraryName: String,
   charterNumber: Number,
   steward: {
     type: Schema.Types.ObjectId,

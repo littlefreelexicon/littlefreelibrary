@@ -27,7 +27,6 @@ getBooksFromDb = () => {
         <Header />
         <Search />
         <CardHolder />
-        <BookCard />
         <BookDetail />
       </React.Fragment>
     );

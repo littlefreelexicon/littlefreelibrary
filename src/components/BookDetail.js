@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 class BookDetail extends Component {
 
@@ -26,7 +26,7 @@ class BookDetail extends Component {
         <img className='book-detail-library-image' alt='' src='https://www.w3schools.com/images/picture.jpg'/>
         <span className='library-address'>
         <a href='/' className='icon-map-marker'>
-            <FontAwesomeIcon icon={faMapMarker} />
+            <FontAwesomeIcon icon={faMapMarkerAlt} />
         </a><br />
         <a href='/'>2635 Girard Ave South<br />
         Minneapolis, MN</a>

@@ -8,6 +8,20 @@ module.exports = {
       .then(data => res.json(data))
       .catch(err => res.status(400).json(err))
   },
+
+  getBookDetails: (req, res) => {
+    db.Book.findById(req.params.bookId)
+      .populate('library')
+      .then(data => res.json(data))
+      .catch(err => res.status(400).json(err))
+  },
+
+  getAllBooks: (req, res) => {
+    db.Book.find()
+      .then(data => res.json(data))
+      .catch(err => res.status(400).json(err))
+  },
+    
   findNearby: (req, res) => {
     const googleBaseUrl = 'https://maps.googleapis.com/maps/api/geocode/json?'
     fetch(`${googleBaseUrl}address=${req.params.zip}&key=${process.env.GOOGLE_API_KEY}`)

@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import BookDetail from '../components/BookDetail'
 import Search from '../components/Search'
 import CardHolder from '../components/CardHolder'
+import LibraryDetail from '../components/LibraryDetail'
 
 class HomePage extends Component {
 
@@ -12,6 +13,7 @@ class HomePage extends Component {
         <Header />
         <Search />
         <CardHolder />
+        <LibraryDetail />
       </React.Fragment>
     );
   }

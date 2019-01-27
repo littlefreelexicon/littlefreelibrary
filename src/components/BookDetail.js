@@ -19,7 +19,6 @@ class BookDetail extends Component {
     fetch(`http://localhost:3001/bookDetail/${id}`)
       .then(data => data.json())
       .then(res => {
-        console.log(res)
         this.setState({ book: res })
       })
   }
@@ -44,14 +43,19 @@ class BookDetail extends Component {
             alt=''
             src={this.state.book.library && this.state.book.library.photo}/>
           <div className='library-address'>
+          <h3>{this.state.book.library && this.state.book.library.libraryName}</h3>
             <a href={this.state.book.library && `http://localhost:3000/librarydetails/${this.state.book.library._id}`}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
-                {this.state.book.library && this.state.book.library.location.address}
+                <span>
+                {this.state.book.library && " " + this.state.book.library.location.address.split(", ")[0]}
+                <br></br>
+                {this.state.book.library && this.state.book.library.location.address.split(", ")[1]}
+                </span>
             </a>
           </div>
+        </div>
         <span><button className='get-directions'>Get Directions</button></span>
         <span><button className='check-out'>Check out this book</button></span>
-        </div>
       </div>
     );
   }

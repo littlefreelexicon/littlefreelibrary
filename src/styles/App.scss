@@ -34,7 +34,7 @@ a {
   color: $color-text;
   
   svg {
-    color: $color-primary;
+    color: $color-secondary;
   }
 }
 
@@ -56,6 +56,10 @@ a {
     color: $color-border;
     height: 1px;
   }
+
+  svg {
+    color: $color-primary;
+  }
 }
 
 nav {
@@ -69,6 +73,10 @@ nav {
 
   h4 {
     color: $color-text-faded;
+  }
+
+  h3 {
+    margin-bottom: 12px;
   }
 
   button {
@@ -98,6 +106,7 @@ nav {
 
   svg {
     padding-right: 0.75em;
+    color: $color-primary;
   }
 }
 
@@ -144,6 +153,7 @@ nav {
   @include box_shadow(1);
   background-color: $white;
   width: 146px;
+  height: 245px;
   border-radius: 2px;
   margin: 6px;
   padding: 12px;
@@ -188,14 +198,17 @@ nav {
 
 .book-detail-main-image{
   width: 100%;
-  height: 200px;
   object-fit: cover;
-  opacity: .6;
+  margin-top: 12px;
 }
 
 .book-detail-page{
   padding: 8px;
   font-style: $font-sans;
+
+  h2 {
+    margin-top: 12px;
+  }
 }
 
 .book-detail-library-image{
@@ -208,6 +221,12 @@ nav {
   float: right;
   padding-right: 40px;
   margin-top: 20px;
+  font-family: $font-sans;
+  width: 50%;
+
+  svg {
+    color: $color-primary;
+  }
 }
 
 .address-border{
@@ -251,9 +270,13 @@ nav {
 }
 
 .align-address{
-  width:50%;
+  width:44%;
   float:left;
   margin-bottom:8px;
+
+  a {
+    font-size: 15px;
+  }
 }
 
 .align-steward{

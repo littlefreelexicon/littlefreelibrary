@@ -26,10 +26,11 @@ class CardHolder extends Component {
         {this.state.books.map((book) => {
           return (
             <BookCard
-              title={book.title}
+              title={book.title.length > 40 ? book.title.substring(0,40) + '...' : book.title}
               author={book.author}
               libraryName={book.library.libraryName}
               id={book._id} />
+
           )
         })}
       </div>

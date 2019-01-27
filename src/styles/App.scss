@@ -238,3 +238,31 @@ nav {
   width: 50%;
   float: right;
 }
+
+.search-area-page{
+  padding: 8px;
+  border-top: 1px ridge lightgrey;
+}
+
+.search-area{
+  padding-bottom:8px;
+  padding-top: 8px;
+}
+
+.done-button{
+  width: 100%;
+  background-color: $color-primary;
+  color:#fff;
+  font-style: $font-sans;
+  height: 40px;
+}
+
+.select-area{
+  padding-bottom: 8px;
+  display: inline-block;
+  text-align: center;
+}
+
+.select-area>*{
+  padding: 8px;
+}

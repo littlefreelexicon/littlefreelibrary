@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../components/Header'
 import Search from '../components/Search'
+import SearchArea from '../components/SearchArea'
 import CardHolder from '../components/CardHolder'
 
 class HomePage extends Component {
@@ -10,6 +11,7 @@ class HomePage extends Component {
         <Header />
         <Search />
         <CardHolder />
+        <SearchArea />
       </React.Fragment>
     )
   }

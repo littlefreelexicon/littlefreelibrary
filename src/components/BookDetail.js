@@ -41,12 +41,14 @@ class BookDetail extends Component {
             className='book-detail-library-image'
             alt=''
             src='https://www.w3schools.com/images/picture.jpg'/>
-          <span className='library-address'>
-            <a href='/' className='icon-map-marker'>
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
-            </a><br />
-            <a href='/'>{this.state.book.library && this.state.book.library.location.address}</a>
-          </span>
+          <a href={this.state.book.library && `http://localhost:3001/librarydetails/${this.state.book.library._id}`}>
+            <span className='library-address'>
+              <a href='/' className='icon-map-marker'>
+                <FontAwesomeIcon icon={faMapMarkerAlt} />
+              </a><br />
+              <a href='/'>{this.state.book.library && this.state.book.library.location.address}</a>
+            </span>
+          </a>
         </div>
         <span><button className='get-directions'>Get Directions</button></span>
         <span><button className='check-out'>Check out this book</button></span>

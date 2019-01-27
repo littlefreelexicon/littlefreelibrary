@@ -11,8 +11,8 @@ class App extends Component {
   this.getBooksFromDb();
 }
 
-getBookFromDb = () => {
-  fetch("http://localhost:3001/api/getData")
+getBooksFromDb = () => {
+  fetch("http://localhost:3000/api/getAllBooks")
     .then(data => data.json())
     .then(res => this.setState({ data: res.data }));
 };

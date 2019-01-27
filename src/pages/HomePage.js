@@ -11,15 +11,11 @@ class HomePage extends Component {
   }
 
 componentDidMount() {
-  this.getBooksFromDb();
-  console.log(this.props.books)
+  fetch("/books/getAllBooks")
+  .then(data => data.json())
+  .then(res => this.setState({ books: res.data }));
+  console.log(this.state.books)
 }
-
-getBooksFromDb = () => {
-  fetch("http://localhost:3001/books/getAllBooks")
-    .then(data => data.json())
-    .then(res => this.setState({ books: res.data }));
-};
 
   render() {
     return (

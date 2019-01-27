@@ -11,6 +11,7 @@ class HomePage extends Component {
 
 componentDidMount() {
   this.getBooksFromDb();
+  console.log(this.props.books)
 }
 
 getBooksFromDb = () => {

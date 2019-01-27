@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from '../components/Header'
 import Search from '../components/Search'
 import CardHolder from '../components/CardHolder'
+import SearchArea from '../components/SearchArea'
 
 class HomePage extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class HomePage extends Component {
         <Header />
         <Search sendResultsToHome={this.filteredResults} />
         <CardHolder resultsFromHome={this.state.books} />
+        <SearchArea />
       </React.Fragment>
     )
   }

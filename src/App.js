@@ -19,7 +19,7 @@ getBookFromDb = () => {
 
   render() {
     return (
-      <div className='App'>
+      <div className='app'>
         <HomePage />
       </div>
     );

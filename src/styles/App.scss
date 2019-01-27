@@ -112,10 +112,73 @@ nav {
   border: 1px gray;
 }
 
+.book-detail-main-image{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: .6;
+}
+
+.book-detail-page{
+  padding: 8px;
+  font-style: $font-sans;
+}
+
+.book-detail-library-image{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.library-address{
+  font-size: 12px;
+  float: right;
+  padding-right: 40px;
+  margin-top: 20px;
+}
+
+.address-border{
+  border: 1px ridge $color-background-accent;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.get-directions{
+  width: 100%;
+  background-color: #ffffff;
+  color: $color-primary;
+  font-style: $font-sans;
+  height: 40px;
+}
+
+.check-out{
+  width: 100%;
+  background-color: $color-primary;
+  color: #ffffff;
+  font-style: $font-sans;
+  height: 40px;
+}
+
+.description{
+  font-style: $font-sans;
+}
+
+.icon-map-marker{
+  margin-left: -20px;
+  transform: translateY(18px);
+  display: inline-block;
+}
 @media (min-width: 600px) {
   .bookCard {
     width: 24rem;
     height: 48rem;
     border: 1px gray;
   }
+}
+
+.book-title{
+  text-align: center;
+  transform: translateY(-135px);
+  display: block;
+  margin-bottom: -60px;
 }

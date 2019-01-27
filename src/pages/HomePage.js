@@ -1,10 +1,26 @@
 import React, { Component } from 'react'
 import Header from '../components/Header'
+import BookDetail from '../components/BookDetail'
 import Search from '../components/Search'
 import BookCard from '../components/BookCard'
 import CardHolder from '../components/CardHolder'
 
 class HomePage extends Component {
+  state = {
+    books: [],
+  }
+
+componentDidMount() {
+  this.getBooksFromDb();
+  console.log(this.props.books)
+}
+
+getBooksFromDb = () => {
+  fetch("http://localhost:3001/books/getAllBooks")
+    .then(data => data.json())
+    .then(res => this.setState({ books: res.data }));
+};
+
   render() {
     return (
       <React.Fragment>
@@ -12,6 +28,7 @@ class HomePage extends Component {
         <Search />
         <CardHolder />
         <BookCard />
+        <BookDetail />
       </React.Fragment>
     );
   }

@@ -3,10 +3,6 @@ import Header from '../components/Header'
 import BookDetail from '../components/BookDetail'
 
 class BookDetailsPage extends Component {
-  state = {
-    books: []
-  }
-
   render() {
     return (
       <React.Fragment>

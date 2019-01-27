@@ -10,26 +10,24 @@ class CardHolder extends Component {
     }
   }
 
-componentDidMount() {
-  fetch("http://localhost:3001/allBooks")
-  .then(data => data.json())
-  .then(res => {
-    console.log(res)
-    this.setState({ books: res })
-  })
-  console.log(this.state.books)
+  componentDidMount() {
+    fetch('http://localhost:3001/allBooks')
+      .then(data => data.json())
+      .then(res => {
+        this.setState({ books: res })
+      })
   }
 
   render() {
     return (
       <div className='card_holder'>
-        {/* TODO: Cards are spawned here depending on JSON return */}
-        {/* <div className='card'>
-          <p>I'm a berk</p>
-        </div> */}
         {this.state.books.map((book) => {
           return (
-            <BookCard title={book.title} author={book.author} libraryName={book.library} />
+            <BookCard
+              title={book.title}
+              author={book.author}
+              libraryName={book.library}
+              id={book._id} />
           )
         })}
       </div>
@@ -37,4 +35,4 @@ componentDidMount() {
   }
 }
 
-export default CardHolder;
+export default CardHolder

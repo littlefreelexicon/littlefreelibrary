@@ -4,11 +4,11 @@ import './styles/App.scss'
 
 class App extends Component {
   state = {
-    book: {}
+    books: [],
   }
 
   componentDidMount() {
-  this.getBookFromDb();
+  this.getBooksFromDb();
 }
 
 getBookFromDb = () => {

@@ -56,6 +56,10 @@ nav {
     width: 90%;
     margin: 0.5em 0;
   }
+
+  svg {
+    padding-right: 0.75em;
+  }
 }
 
 .search {
@@ -83,8 +87,19 @@ nav {
   }
 }
 
+.card_holder {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
 .card {
   @include box_shadow(1);
+  background-color: $white;
+  height: 175px;
+  min-width: 160px;
+  border-radius: 5px;
+  margin: 0.25em;
 }
 
 .bookCard {

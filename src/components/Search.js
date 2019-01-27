@@ -5,8 +5,8 @@ class Search extends Component {
     return (
       <form className='search'>
         <span>Books close by</span>
-        <button>near 55408</button> {/* TODO: opens SearchArea modal at bottom of screen on click */}
-        <input type='text' placeholder='Search'>
+        <button>near 55102</button> {/* TODO: opens SearchArea modal at bottom of screen on click */}
+        <input type='text' placeholder='search a book title, author or publisher'>
         </input>
       </form>
     );

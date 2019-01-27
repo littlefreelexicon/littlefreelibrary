@@ -14,10 +14,8 @@ componentDidMount() {
   fetch("http://localhost:3001/allBooks")
   .then(data => data.json())
   .then(res => {
-    console.log(res)
     this.setState({ books: res })
   })
-  console.log(this.state.books)
   }
 
   render() {

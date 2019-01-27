@@ -12,7 +12,7 @@ class CardHolder extends Component {
 
   render() {
     return (
-      <div className="card_holder">
+      <div className='card_holder'>
         {this.props.resultsFromHome.map(book => {
           return (
             <BookCard
@@ -21,7 +21,6 @@ class CardHolder extends Component {
               author={book.author}
               libraryName={book.library.location.address}
               id={book._id} />
-              genre={book.genres[0]}/>
           )
         })}
       </div>

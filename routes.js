@@ -5,7 +5,9 @@ const libraryController = require('./controllers/libraryController')
 const stewardController = require('./controllers/stewardController')
 
 // Book Routing
-router.route('/book').post(bookController.create)
+router.post('/book', bookController.create)
+router.get('/book/:bookId', bookController.getBookDetails)
+router.get('/books/', bookController.getAllBooks)
 
 // Library Routing
 router.route('/library').post(libraryController.create)

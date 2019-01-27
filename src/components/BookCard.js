@@ -5,11 +5,13 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 class BookCard extends Component {
   render() {
     return (
-      <div className='card'>
-        <img src={process.env.PUBLIC_URL + '/images/fiction.svg'} alt="book genre icon" />
-        <h2>{this.props.title} <span>by {this.props.author}</span></h2>
-        <h3><FontAwesomeIcon icon={faMapMarkerAlt} /> <address>{this.props.libraryName}</address></h3>
-      </div>
+      <a href={`http://localhost:3000/bookdetails/${this.props.id}`}>
+        <div className='card'>
+          <img src='https://www.fillmurray.com/200/250' alt="It's Bill Murray" />
+          <h2>{this.props.title} <span>by {this.props.author}</span></h2>
+          <h3><FontAwesomeIcon icon={faMapMarkerAlt} /> <address>{this.props.libraryName}</address></h3>
+        </div>
+      </a>
     );
   }
 }

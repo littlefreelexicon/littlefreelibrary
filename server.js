@@ -2,7 +2,6 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const env = require('dotenv').load()
-const routes = require('./routes.js')
 
 const PORT = process.env.PORT || 3001
 const app = express()
@@ -13,7 +12,6 @@ app.use(express.static('build'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(routes)
-
 
 app.listen(PORT, () => {
     console.log(`Server listening on http://localhost:${PORT}`);

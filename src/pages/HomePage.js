@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../components/Header'
+import BookDetail from '../components/BookDetail'
 import Search from '../components/Search'
 import BookCard from '../components/BookCard'
 import CardHolder from '../components/CardHolder'
@@ -26,6 +27,8 @@ getBooksFromDb = () => {
         <Header />
         <Search />
         <CardHolder />
+        <BookCard />
+        <BookDetail />
       </React.Fragment>
     );
   }

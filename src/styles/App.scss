@@ -100,16 +100,41 @@ nav {
 .card {
   @include box_shadow(1);
   background-color: $white;
-  height: 200px;
-  width: 168px;
+  height: 188px;
+  width: 146px;
   border-radius: 5px;
   margin: 6px;
-}
+  padding: 12px;
+  display: grid;
 
-.bookCard {
-  width: 12rem;
-  height: 24rem;
-  border: 1px gray;
+  h2 {
+    color: $color-text;
+    font-size: 1.1em;
+    line-height: 1.1em;
+
+    span {
+      font-family: $font-serif;
+      color: $color-text-faded;
+    }
+  }
+
+  h3 {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+
+    svg {
+      padding-right: 6px;
+    }
+  }
+
+  img {
+    width: 90px;
+    align-self: center;
+    justify-self: center;
+    border: $border-default;
+    margin-bottom: 1em;
+  }
 }
 
 .book-detail-main-image{
@@ -167,13 +192,6 @@ nav {
   margin-left: -20px;
   transform: translateY(18px);
   display: inline-block;
-}
-@media (min-width: 600px) {
-  .bookCard {
-    width: 24rem;
-    height: 48rem;
-    border: 1px gray;
-  }
 }
 
 .book-title{

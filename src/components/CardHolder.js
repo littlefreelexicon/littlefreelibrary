@@ -28,7 +28,6 @@ class CardHolder extends Component {
               author={book.author}
               libraryName={book.library.libraryName}
               id={book._id} />
-
           )
         })}
       </div>

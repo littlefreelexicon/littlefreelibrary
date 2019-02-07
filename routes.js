@@ -22,7 +22,7 @@ router.get('/findLibrary/:id', libraryController.findById)
 router.post('/registerSteward', stewardController.register)
 
 router.use((req, res) => {
-  res.sendFile(path.join(__dirname, './build/index.html'))
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
 module.exports = router
